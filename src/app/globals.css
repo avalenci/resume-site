@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: #111111;
+}
+
+h1 {
+  font-style: italic;
+  margin: 0px;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid silver;
+}
+
+h2 {
+  margin: 0px;
+}
+h3 {
+  margin: 0px;
+}
+p {
+  margin: 0px;
+}
+li {
+  font-size: 14px;
+}
+/* The sidebar menu */
+.sidenav {
+  color: white;
+  height: 100%;
+  width: 16rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Main page */
+.main {
+  width: 100%;
+  margin-left: 16rem; /* Same as the width of the sidenav */
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  background-image: linear-gradient(silver, #111111);
+
+  & > div {
+    background-color: #111111;
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    & > div {
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+.sidenav-header {
+  border-bottom: 1px solid silver;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.name {
+  align-self: center;
+}
+
+.title {
+  padding-bottom: 0.5rem;
+}
+
+.profile {
+  width: 120px;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.last-name {
+  padding-left: 20px;
+}
+
+.point-list {
+  list-style-type: circle;
+  font-size: 12px;
+  margin: 0px;
+  color: #cccccc;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 540px) {
+  .sidenav {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 1rem;
+    padding-top: 4rem;
+    position: relative;
+    .icon {
+      width: 50px !important;
+    }
+  }
+  .main {
+    margin-left: 0;
+    height: auto;
+    overflow: visible;
+  }
+  .profile {
+    width: 200px;
+  }
+  .space-between {
+    flex-flow: column;
+  }
+  .container {
+    display: flex;
+    flex-flow: column;
+    overflow: scroll !important;
+  }
+  .name {
+    font-size: 36px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .icons-space {
+    padding: 0 5rem !important;
+  }
+}
+
+.icon {
+  width: 30px;
+}
+
+.dogs {
+  display: flex;
+  flex-flow: row-reverse;
+
+  background-color: rgba(0, 0, 0, 0) !important;
+
+  img {
+    width: 50px;
+  }
+}
+
+.flex {
+  display: flex;
+  padding: 0 !important;
+  align-items: center;
+}
+
+.curved {
+  border-radius: 2px;
+}
+
+.skills-list {
+  font-size: 50%;
+}
+
+.container {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.icons-space {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#skills-header {
+  padding-bottom: 1rem;
+}
