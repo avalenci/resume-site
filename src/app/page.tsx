@@ -234,7 +234,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        {/* <div className="dogs">
+        <div className="dogs">
           <img
             alt="Hi! I'm Oliver"
             title="woof"
@@ -245,7 +245,7 @@ export default function Home() {
             title="arf"
             src="https://cdn.glitch.global/89129f4a-7afd-4317-a6a3-c18fbd348bd7/IMG_3267.png?v=1730420483648"
           />
-        </div> */}
+        </div>
       </div>
     </>
   );

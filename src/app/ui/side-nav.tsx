@@ -1,4 +1,7 @@
-export default function SideNav({ title, skills}: { title: string, skills: any[] }) {
+export default function SideNav(
+    { title, skills }: 
+    { title: string, skills: any[] }
+) {
     return (
     <div className="sidenav">
         <div className="sidenav-header">
@@ -45,7 +48,7 @@ export default function SideNav({ title, skills}: { title: string, skills: any[]
             <div key={item.type}>
                 <h3>{item.type}</h3>
                 <ul className="skills-list">
-                {item.list.map((skill) => (
+                {item.list.map((skill: any) => (
                     <li key={skill}>{skill}</li>
                 ))}
                 </ul>

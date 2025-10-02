@@ -22,7 +22,6 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -32,15 +31,20 @@ body {
 
 h1 {
   font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
   margin: 0px;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid silver;
 }
 
 h2 {
+  font-weight: bold;
+  font-size: 16px;
   margin: 0px;
 }
 h3 {
+  font-weight: bold;
   margin: 0px;
 }
 p {
