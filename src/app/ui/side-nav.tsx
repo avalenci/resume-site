@@ -1,6 +1,8 @@
+import { Skill } from "../lib/Skill";
+
 export default function SideNav(
     { title, skills }: 
-    { title: string, skills: any[] }
+    { title: string, skills: Skill[] }
 ) {
     return (
     <div className="sidenav">
@@ -48,7 +50,7 @@ export default function SideNav(
             <div key={item.type}>
                 <h3>{item.type}</h3>
                 <ul className="skills-list">
-                {item.list.map((skill: any) => (
+                {item.list.map((skill: string) => (
                     <li key={skill}>{skill}</li>
                 ))}
                 </ul>

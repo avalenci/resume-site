@@ -1,6 +1,7 @@
+import { Skill } from "./lib/Skill";
 import SideNav from "./ui/side-nav";
 
-const skills = [
+const skills: Skill[] = [
   {
     type: "Frontend",
     list: [
