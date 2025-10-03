@@ -132,8 +132,12 @@ ul {
   padding-inline-start: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 540px) {
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-flow: column;
+    overflow: scroll !important;
+  }
   .sidenav {
     width: auto;
     height: auto;
@@ -155,11 +159,6 @@ ul {
   }
   .space-between {
     flex-flow: column;
-  }
-  .container {
-    display: flex;
-    flex-flow: column;
-    overflow: scroll !important;
   }
   .name {
     font-size: 36px;

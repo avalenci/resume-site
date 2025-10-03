@@ -145,8 +145,8 @@ const resume = {
       start: "2024",
       icons: [react],
       details: [
-        "Created a static resume site with React and compiled with Babel",
-        "Deployed with Glitch, a website hosting and development platform that enables instant editing",
+        "Created a static resume site with React and Next.js",
+        "Deployed with Vercel, the creator of Next.js",
       ],
     },
   ],
@@ -163,7 +163,7 @@ const resume = {
 
 export default function Home() {
   return (
-    <>
+    <div className="container">
       <SideNav title={title} skills={skills}></SideNav>
       <div className="main">
         <div id="experience">
@@ -248,6 +248,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
