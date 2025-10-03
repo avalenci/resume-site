@@ -163,7 +163,7 @@ const resume = {
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="home-container">
       <SideNav title={title} skills={skills}></SideNav>
       <div className="main">
         <div id="experience">

@@ -21,12 +21,10 @@
 
 /* CSS files add styling rules to your content */
 
-body {
-  display: flex;
-  height: 100vh;
+html, body {
+  height: 100%;
   overflow: hidden;
   margin: 0;
-  background: #111111;
 }
 
 h1 {
@@ -53,7 +51,14 @@ p {
 li {
   font-size: 14px;
 }
-/* The sidebar menu */
+
+.home-container {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
 .sidenav {
   color: white;
   height: 100%;
@@ -69,12 +74,11 @@ li {
   overflow-y: auto;
 }
 
-/* Main page */
 .main {
-  width: 100%;
   margin-left: 16rem; /* Same as the width of the sidenav */
   padding: 2rem;
   box-sizing: border-box;
+  height: 100%;
   overflow-y: auto;
   display: flex;
   flex-flow: column;
@@ -133,7 +137,7 @@ ul {
 }
 
 @media (max-width: 500px) {
-  .container {
+  .home-container {
     display: flex;
     flex-flow: column;
     overflow: scroll !important;
@@ -198,15 +202,6 @@ ul {
 
 .skills-list {
   font-size: 50%;
-}
-
-.container {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
 }
 
 .icons-space {
